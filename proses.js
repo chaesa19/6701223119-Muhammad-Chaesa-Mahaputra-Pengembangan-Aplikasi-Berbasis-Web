@@ -5,14 +5,21 @@ function calculate() {
     const operation = document.getElementById("operation").value;
     let result;
     
-    if (operation === "+") {
-      result = num1 + num2;
-    } else if (operation === "-") {
-      result = num1 - num2;
-    } else if (operation === "*") {
-      result = num1 * num2;
-    } else if (operation === "/") {
-      result = num1 / num2;
+    switch (operation) {
+      case "+":
+        result = num1 + num2;
+        break;
+      case "-":
+        result = num1 - num2;
+        break;
+      case "*":
+        result = num1 * num2;
+        break;
+      case "/":
+        result = num1 / num2;
+        break;
+      default:
+        result = "Operasi tidak valid";
     }
     alert("Hasil: " + result);
   }
