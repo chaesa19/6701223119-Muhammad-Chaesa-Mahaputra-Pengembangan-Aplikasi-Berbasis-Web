@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Aritmatika</title>
+</head>
+<body>
+    <form>
+        <!-- Textbox untuk Angka 1 -->
+        <label for="number1">Angka 1:</label>
+        <input type="number" id="number1" name="number1" placeholder="Masukkan angka pertama" required>
+        <br><br>
+        
+        <!-- Textbox untuk Angka 2 -->
+        <label for="number2">Angka 2:</label>
+        <input type="number" id="number2" name="number2" placeholder="Masukkan angka kedua" required>
+        <br><br>
+        
+        <!-- Dropdown untuk Operasi Aritmatika -->
+        <label for="operation">Operasi:</label>
+        <select id="operation" name="operation" required>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <br><br>
+        
+        <!-- Tombol Submit -->
+        <button type="submit">Hitung</button>
+    </form>
+</body>
+</html>
